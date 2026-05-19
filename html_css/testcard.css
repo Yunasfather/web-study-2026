@@ -1,0 +1,33 @@
+.img img:hover {
+  background-color: green;
+  width: 166px;
+}
+
+.btn1 {
+  background-color: white;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  width: 80px;
+  height: 30px;
+}
+
+.btn1:hover {
+  border-color: red;
+  color: purple;
+}
+
+.btn2 {
+  background-color: blue;
+  color: white;
+  border: 1px solid;
+  border-radius: 8px;
+  width: 80px;
+  height: 30px;
+}
+
+.btn2:hover {
+  background-color: skyblue;
+}

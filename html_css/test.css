@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+.profile-card {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-family: "맑은고딕", sans-serif;
+}
+
+#main-title {
+  color: blue;
+}
+
+.intro {
+  color: green;
+  font-size: 16px;
+}
+
+.intro::before {
+  content: "✅ ";
+}
+
+a[target="_blank"] {
+  color: red;
+}
+
+.study-btn {
+  background-color: skyblue;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.study-btn:hover {
+  background-color: navy;
+}

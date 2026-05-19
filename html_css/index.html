@@ -1,0 +1,36 @@
+<!DOCTYPE html>>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+      pobj = {
+        x: 100,
+        y: 200,
+        myShape: "Player",
+        display: function () {
+          console.log("x=" + this.x + ",y=" + this.y + ":" + this.myShape);
+        },
+        moveLeft: function () {
+          this.x = this.x - 2;
+          this.display();
+        },
+        moveRight: function () {
+          this.x = this.x + 2;
+          this.display();
+        },
+      };
+
+      pobj.display();
+
+    
+    </script>
+    <script type="text/javascript">
+        function Player(mx, my) {
+
+        }
+
+        var pobj2 = new Player();
+    </script>
+  </head>
+  <body></body>
+</html>

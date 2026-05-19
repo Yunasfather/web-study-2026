@@ -1,0 +1,12 @@
+a[target="_blank"] {
+  color: red;
+}
+
+p::before {
+  content: "👉 ";
+}
+
+input[type="email"] {
+  border: 1px solid gray;
+  border-radius: 4px;
+}

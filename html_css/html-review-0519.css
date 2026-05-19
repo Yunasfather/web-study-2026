@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "맑은 고딕", sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: f5f5f5;
+}
+
+#main-header {
+  background-color: white;
+  padding: 20px;
+  border: 2px solid navy;
+  border-radius: 12px;
+}
+
+.intro {
+  color: green;
+  font-weight: bold;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 16px;
+  border: 1px solid gray;
+  border-radius: 12px;
+}
+
+.card h2 {
+  color: navy;
+}
+
+blockquote {
+  border-left: 4px solid gray;
+  padding-left: 12px;
+  color: #333;
+}
+
+code {
+  background-color: #eeeeee;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #222222;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+kbd {
+  background-color: black;
+  color: white;
+  padding: 3px 4px;
+  border-radius: 4px;
+}
+
+.box {
+  border: 1px solid blue;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.blue-text {
+  color: blue;
+  font-weight: bold;
+}
+
+.yellow-bg {
+  background-color: yellow;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.primary-color {
+  background-color: blue;
+  color: white;
+}
+
+.btn:hover {
+  background-color: navy;
+  color: white;
+}
+
+a[target="_blank"] {
+  color: red;
+  font-weight: bold;
+}
+
+a[target="_blank"]::after {
+  content: " 🔗";
+}
+
+a[href$=".pdf"] {
+  color: purple;
+}
+
+input[type="email"] {
+  border: 2px solid green;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.notice::before {
+  content: "✅ ";
+  color: red;
+  font-size: 0.8em;
+}
+
+.notice::after {
+  content: " [중요]";
+  color: red;
+  font-size: 0.8em;
+}
+
+#unique-message {
+  color: darkorange;
+  font-weight: bold;
+}
+
+p::first-letter {
+  font-size: 1.2em;
+}

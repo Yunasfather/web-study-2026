@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML 1~3주차 복습</title>
+    <link rel="stylesheet" href="html-review-0519.css" />
+  </head>
+
+  <body>
+    <header id="main-header">
+      <h1>HTML/CSS 복습 페이지</h1>
+      <p class="intro">텍스트 태그, div/span, class/id를 복습합니다.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>1. 인용구 표현</h2>
+
+        <blockquote>
+          웹의 힘은 그 보편성에 있습니다. 장애에 구애받지 않고 모든 사람이
+          접근할 수 있는 것이 필수적입니다.
+        </blockquote>
+
+        <p>
+          팀 버너스 리는 웹의 접근성을 강조하며
+          <q>웹은 모두를 위한 것</q>이라고 말했습니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>2. 코드와 입력</h2>
+
+        <p>
+          자바스크립트의 기본 출력문은
+          <code>console.log()</code>입니다.
+        </p>
+
+        <pre>
+function helloWorld() {
+  console.log("Hello, HTML5!");
+}
+        </pre>
+
+        <p>
+          수정한 내용을 저장하려면
+          <kbd>Ctrl</kbd> + <kbd>S</kbd>를 누르세요.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>3. 시간과 장식 요소</h2>
+
+        <p>
+          게시일:
+          <time datetime="2025-12-23">2025년 12월 23일</time>
+        </p>
+
+        <p>
+          물 H<sub>2</sub>O는 생명의 근원이며, 아인슈타인의 에너지는
+          E=mc<sup>2</sup>입니다.
+        </p>
+
+        <p>
+          <small>본 콘텐츠의 저작권은 © 2025 개발자에게 있습니다.</small>
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>4. 편집 이력 및 상태</h2>
+
+        <p>
+          이번 프로젝트의 마감일은
+          <del>12월 24일</del>에서 <ins>12월 31일</ins>로 연장되었습니다.
+        </p>
+
+        <p>
+          <s>현재 재고가 모두 소진되었습니다.</s>
+        </p>
+
+        <p>
+          <abbr title="HyperText Markup Language">HTML</abbr>은 웹 페이지의
+          구조를 만드는 언어입니다.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>5. div와 span</h2>
+
+        <div class="box">
+          <h3>div 영역</h3>
+          <p>div는 블록 요소이며, 레이아웃 구역을 나눌 때 사용합니다.</p>
+        </div>
+
+        <p>
+          이 문장에서
+          <span class="blue-text">파란색으로 강조된</span>
+          단어와
+          <span class="yellow-bg">노란색 배경</span>
+          이 적용된 단어를 보세요.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>6. 링크와 속성 선택자</h2>
+
+        <p>
+          <a href="https://www.google.com" target="_blank"
+            >구글 새 창으로 열기</a
+          >
+        </p>
+
+        <p>
+          <a href="sample.pdf">PDF 파일 다운로드</a>
+        </p>
+
+        <form>
+          <label for="email">이메일</label>
+          <input id="email" type="email" placeholder="email@example.com" />
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>7. class와 id</h2>
+
+        <button class="btn primary-color">확인</button>
+        <button class="btn">취소</button>
+
+        <p class="notice">class는 여러 요소에 중복해서 사용할 수 있습니다.</p>
+        <p id="unique-message">id는 한 페이지에서 고유한 요소에 사용합니다.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>HTML/CSS 1~3주차 복습 완료</p>
+    </footer>
+  </body>
+</html>
