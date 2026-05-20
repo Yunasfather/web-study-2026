@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background-color: linen;
+      }
+      .sec {
+        color: red;
+      }
+      #pass {
+        color: green;
+      }
+
+      ul li {
+        color: red;
+      }
+
+      /* ul > li {
+        //ul태그에 자식만 가져올 때
+      } */
+      ul > li li {
+        /* 리스트 안에 리스트 color변경*/
+        color: green;
+      }
+
+      li#a + li {
+        /* 리스트중에 a를 기준으로 해서 인접한 리스트에 적용 */
+        color: blue;
+      }
+      li#a ~ li {
+        /* a에 인접한 나머지 선택 */
+        color: green;
+      }
+      a:link {
+        /* 링크에 색넣기 */
+        color: red;
+      }
+      a:visited {
+        /* 링크에 한번이라도 방문하게 되면 변경 */
+        color: green;
+      }
+      p:hover {
+        color: yellow;
+        background-color: pink;
+      }
+
+      li#b:nth-child(3) {
+        background-color: pink;
+        color: brown;
+      }
+      p::first-letter {
+        color: blue;
+      }
+      p::after {
+        content: "[자세히 보기]";
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>웹프로그래밍</h1>
+    <p>
+      코딩과 프로그래밍의 본질은 문제를 단순화하고 논리저으로 해결하여 일상의
+      가치를 높이는 <span class="sec">창의적인 과정</span>이다.
+      <span id="pass">
+        반복, 좋은 코드 모방, 그리고 실패를 두려워하지 않는 자세가 중요한
+        핵심</span
+      >이다.
+    </p>
+
+    <ul>
+      <li>HTML</li>
+      <li>
+        CSS
+        <ul>
+          <li>선택자</li>
+          <li>박스모델</li>
+        </ul>
+      </li>
+      <li>Javascript</li>
+    </ul>
+
+    <ul>
+      <li id="a">A</li>
+      <li>B</li>
+      <li>C</li>
+      <li>D</li>
+      <li>E</li>
+    </ul>
+
+    <ul>
+      <li style="color: blue">A</li>
+      <li>B</li>
+      <li id="b">C</li>
+      <li>D</li>
+      <li>E</li>
+    </ul>
+
+    <a href="https://www.naver.com"> 네이버</a>
+  </body>
+</html>
