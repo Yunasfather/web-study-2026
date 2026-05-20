@@ -1,0 +1,59 @@
+/* h1 {
+  color: blue;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 2px -5px 4px skyblue;
+  line-height: 100px;
+  text-transform: capitalize;
+}
+
+body {
+  background-color: pink;
+  background-image: url("image/51581-spring-846051.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+} */
+
+* {
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#img1 {
+  background-image: url("image/51581-spring-846051.jpg");
+}
+#img2 {
+  background-image: url("image/51581-spring-846051.jpg");
+}
+#img3 {
+  background-image: url("image/51581-spring-846051.jpg");
+}
+
+.bg-img {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  color: white;
+  font-weight: bold;
+  border: 20px solid white;
+  position: fixed;
+  top: 40%;
+  left: 30%;
+  text-shadow:
+    5px -5px 5px skyblue,
+    0px 0px 40px darkblue;
+  width: 600px;
+  font-size: 80px;
+}

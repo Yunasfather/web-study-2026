@@ -1,0 +1,49 @@
+.naverlogo {
+  margin-left: 50px;
+  text-align: center;
+  font-size: 40px;
+  color: green;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+ a {
+  color: green;
+  text-decoration: none;
+}
+
+.box {
+  margin-left: 340px;
+}
+
+#id {
+  width: 200px;
+  height: 30px;
+}
+
+#password {
+  width: 200px;
+  height: 30px;
+}
+
+.loin {
+  margin-top: 15px;
+  margin-left: 340px;
+  width: 215px;
+  height: 30px;
+  color: white;
+  font-size: bold;
+  background-color: green;
+  border: 2px solid;
+  border-radius: 8px;
+}
+
+.check {
+  margin-top: 15px;
+  margin-left: 340px;
+}
+p {
+  margin-top: 15px;
+  margin-left: 340px;
+  color: red;
+}
