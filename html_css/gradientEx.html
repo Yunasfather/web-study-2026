@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #simple1 {
+        width: 300px;
+        height: 300px;
+      }
+      #simple2 {
+        width: 300px;
+        height: 300px;
+      }
+      #simple3 {
+        width: 300px;
+        height: 300px;
+      }
+      #simple4 {
+        width: 300px;
+        height: 300px;
+      }
+      #simple5 {
+        width: 300px;
+        height: 300px;
+      }
+      #simple6 {
+        width: 300px;
+        height: 300px;
+      }
+      #simple-radial1 {
+        width: 240px;
+        height: 120px;
+      }
+
+      #simple-radial2 {
+        width: 120px;
+        height: 120px;
+      }
+
+      #simple-radial3 {
+        width: 200px;
+        height: 200px;
+      }
+
+      #simple-conic1 {
+        width: 200px;
+        height: 200px;
+      }
+
+      #simple-conic2 {
+        width: 200px;
+        height: 200px;
+      }
+      #simple-conic3 {
+        width: 200px;
+        height: 200px;
+      }
+
+      #simple-repeat {
+        width: 200px;
+        height: 200px;
+      }
+      .simple-linear1 {
+        /* 기본은 위에서 아래로 내려온다. */
+        background: linear-gradient(blue, pink);
+      }
+      .simple-linear2 {
+        /* 방향 */
+        background: linear-gradient(to right, blue, pink);
+      }
+      .simple-linear3 {
+        /* 각도값*/
+        background: linear-gradient(45deg, blue, pink);
+      }
+      .simple-linear4 {
+        /* 두 가지 이상의 색상 사용 */
+        background: linear-gradient(red, yellow, blue, orange);
+      }
+      .simple-linear5 {
+        /* 그라데이션 이미지 겹치기 */
+        /*  transparent : 투명, mistyrose: 점점 붉게 */
+        background:
+          linear-gradient(to right, transparent, mistyrose),
+          url("image/오솔길.jpg");
+      }
+      .simple-linear6 {
+        /* 중첩된 그라데이션 */
+        background:
+          linear-gradient(217deg, rgb(255 0 0 / 80%), rgb(255 0 0 / 0%) 70.71%),
+          linear-gradient(127deg, rgb(0 255 0 / 80%), rgb(0 255 0 / 0%) 70.71%),
+          linear-gradient(336deg, rgb(0 0 255 /80%), rgb(0 0 255 /0%) 70.71%);
+      }
+      .simple-radial1 {
+        /* 방사형 그라데이션 
+        radial-gradient(색상1, 색상2)
+        중심 지점 50% 50%
+        중심점에서 바깥쪽으로 원을 그리고 색상이 퍼져나가는 방식
+        */
+        background: radial-gradient(blue, pink);
+      }
+
+      .simple-radial2 {
+        /* 방사형 그라데이션 2
+        radial-gradient(색상1 절대길이, 색상2 백분율, ...)
+       
+        */
+        background: radial-gradient(red 10px, yellow 30%, #1e90ff 50%);
+      }
+
+      .simple-radial3 {
+        /* 방사형 그라데이션 2
+        중첩 방사형 그라데이션
+       
+        */
+        background:
+          radial-gradient(
+            circle at 50% 0,
+            rgb(255 0 0 / 50%),
+            rgb(255 0 0 / 0%) 70.71%
+          ),
+          radial-gradient(
+            circle at 6.7% 75%,
+            rgb(0 0 255 / 50%),
+            rgb(0 0 255 / 0%) 70.71%
+          ),
+          radial-gradient(
+              circle at 93.3% 75%,
+              rgb(0 255 0 / 50%),
+              rgb(0 255 0 / 0%) 70.71%
+            )
+            beige;
+        border-radius: 50%;
+      }
+
+      .simple-conic1 {
+        /* 중심점을 기준으로 50% 50% 지점에서 시계방향으로 회전하며 색상이 변하는 방식
+        파이 차트나 컬러 휠 효과를 만들 때 유용
+        background: conic-gradient(색상1, 색상2)
+        */
+        background: conic-gradient(red, blue);
+      }
+
+      .simple-conic2 {
+        /* 원뿔의 중심위치 설정하기 */
+        background: conic-gradient(at 0% 30%, red 10%, yellow 30%, #1e90ff 50%);
+      }
+
+      .simple-conic3 {
+        /* 각도 변경하기 */
+        background: conic-gradient(
+          from 45deg,
+          red,
+          orange 50%,
+          yellow 85%,
+          green
+        );
+      }
+
+      .simple-repeat {
+        /* 반복되는 선형 그라데이션 */
+        background: repeating-linear-gradient(
+          -45deg,
+          red,
+          red 5px,
+          blue 5px,
+          blue 10px
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div id="simple1" class="simple-linear1"></div>
+    <br />
+    <div id="simple2" class="simple-linear2"></div>
+    <br />
+    <div id="simple3" class="simple-linear3"></div>
+    <br />
+    <div id="simple4" class="simple-linear4"></div>
+    <br />
+    <div id="simple5" class="simple-linear5"></div>
+    <br />
+    <div id="simple6" class="simple-linear6"></div>
+    <br />
+    <div id="simple-radial1" class="simple-radial1"></div>
+    <br />
+    <div id="simple-radial2" class="simple-radial2"></div>
+    <br />
+    <div id="simple-radial3" class="simple-radial3"></div>
+    <br />
+    <div id="simple-conic1" class="simple-conic1"></div>
+    <br />
+    <div id="simple-conic2" class="simple-conic2"></div>
+    <br />
+    <div id="simple-conic3" class="simple-conic3"></div>
+    <br />
+    <div id="simple-repeat" class="simple-repeat"></div>
+  </body>
+</html>

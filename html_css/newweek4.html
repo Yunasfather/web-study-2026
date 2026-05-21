@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      main {
+        max-width: 1000px;
+        margin: auto;
+      }
+      h1 {
+        font-size: 50px;
+        word-break: break-all;
+      }
+
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+      }
+
+      .content {
+        background-color: white;
+        padding: 10px;
+      }
+
+      /* section::after {
+        content: "";
+        display: table;
+        clear: both;
+      } */
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>GALLERY</h2>
+      <section>
+        <div class="column">
+          <div class="content">
+            <img
+              src="image/오솔길.jpg"
+              alt="오솔길"
+              style="width: 100%"
+              height="536"
+            />
+            <h4>오솔길</h4>
+            <p>폭이 좁고 호젓하여 둘러보기 좋은 오붓한 길</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <img src="image/언덕1.jpg" alt="풍경" style="width: 100%" />
+            <h4>Landscape</h4>
+            <p>The most beautiful landscapes</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <img src="image/사막.jpg" alt="사막" style="width: 100%" />
+            <h4>Sand</h4>
+            <p>암석과 광물질의 작은 조각으로 구성된 입자</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <img src="image/사막.jpg" alt="사막" style="width: 100%" />
+            <h4>Sand</h4>
+            <p>암석과 광물질의 작은 조각으로 구성된 입자</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="content">
+            <img src="image/언덕2.jpg" alt="풍경" style="width: 100%" />
+            <h4>Landscape</h4>
+            <p>The most beautiful landscapes</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
