@@ -43,11 +43,12 @@ html {
 }
 
 .bg-text {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(4, 4, 4, 0.5);
   z-index: 100;
   color: white;
   font-weight: bold;
   border: 20px solid white;
+  border-radius: 8px;
   position: fixed;
   top: 40%;
   left: 30%;

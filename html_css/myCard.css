@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  background-image: url("image/바다.jpg");
+  background-clip: text;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 90px;
+  text-align: center;
+  text-shadow: 2px -15px 7px blue;
+}
+
+.headerimg {
+  background-image: url("image/51581-spring-846051.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 30px;
+}
+
+.subtitle {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.menu {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.menu a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 15px;
+
+  color: white;
+  background: linear-gradient(to right, #2563eb, #7c3aed);
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+a:hover {
+  background: conic-gradient(from 45deg, red, orange, yellow, green);
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+}
+input:required {
+  background-color: red;
+}
+input:invalid {
+  border-color: red;
+  font-size: 20px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
