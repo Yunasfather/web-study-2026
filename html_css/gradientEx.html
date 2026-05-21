@@ -168,6 +168,21 @@
           blue 10px
         );
       }
+      h1 {
+        /* 텍스트 자체에 색상 변화를 주고 싶을 때 사용 
+            background-clip 속성을 활용
+        */
+
+        background: linear-gradient(
+          /*red에서 50%지점에서 블루로 가도록 사용*/ to right,
+          red 0%,
+          blue 50%
+        ); /*배경에 그라데이션 설정*/
+        -webkit-background-clip: text; /* 배경을 글자 모양대로 자름, -webkit는 모든 브라우저에 사용 가능하게 함*/
+        background-clip: text;
+        color: transparent;
+        font-size: 80px;
+      }
     </style>
   </head>
   <body>
@@ -196,5 +211,7 @@
     <div id="simple-conic3" class="simple-conic3"></div>
     <br />
     <div id="simple-repeat" class="simple-repeat"></div>
+    <br />
+    <h1>AI웹프로그래밍기초</h1>
   </body>
 </html>
