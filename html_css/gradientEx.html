@@ -183,6 +183,18 @@
         color: transparent;
         font-size: 80px;
       }
+      h2 {
+        /*텍스트에 이미지 그라데이션
+        background-clip 속성을 활용
+        */
+        background-image: url("image/51581-spring-846051.jpg");
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-weight: bold;
+        font-size: 80px;
+      }
     </style>
   </head>
   <body>
@@ -213,5 +225,6 @@
     <div id="simple-repeat" class="simple-repeat"></div>
     <br />
     <h1>AI웹프로그래밍기초</h1>
+    <h2>그라데이션 만들기</h2>
   </body>
 </html>
