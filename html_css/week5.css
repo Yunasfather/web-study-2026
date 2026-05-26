@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.sec {
+  border: 2px solid skyblue;
+  margin-top: 20px;
+}
+
+h2:hover {
+  color: red;
+  font-size: 30px;
+}
+
+.circle li:nth-child(2) {
+  color: pink;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.content {
+  background-color: gray;
+  margin: 10px 10px 10px 10px;
+}
+
+.backimg {
+  text-align: center;
+  background-image: url(image/51581-spring-846051.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  border: 3px solid white;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+h1 {
+  background: linear-gradient(to right, red 20%, blue 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+a:hover {
+  background: conic-gradient(at 0% 40%, red, yellow, green, blue);
+}
+
+.email:required {
+  background-color: red;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+button {
+  margin-bottom: 20px;
+}

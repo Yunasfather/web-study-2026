@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(250, 240, 230);
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+#a {
+}
