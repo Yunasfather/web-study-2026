@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  max-width: 1000px;
+  line-height: 1.8;
+  margin: 0 auto;
+}
+
+header {
+  margin: 0px 0px 30px 0px;
+  padding: 30px 0;
+  background-image: url("image/comimg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maintitle {
+  color: transparent;
+
+  text-align: center;
+  text-shadow:
+    2px -5px 3px white,
+    2px 5px 10px white;
+  font-weight: bold;
+  font-size: 40px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  background: linear-gradient(to right, red 10%, blue 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.subtitle {
+  color: white;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-style: italic;
+}
+
+.subtitleColor:hover {
+  background-color: skyblue;
+}
+
+.menu {
+  text-align: center;
+  font-size: 18px;
+}
+
+.a_menu {
+  color: white;
+
+  display: inline-block;
+  padding: 8px 12px;
+
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+
+  border: 2px solid blue;
+  border-radius: 8px;
+
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  background-color: lightblue;
+}
+
+.a_menu:hover {
+  background: conic-gradient(at 10% 30%, red, blue, yellow, green);
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-box {
+  border: 2px dotted blue;
+  border-radius: 12px;
+
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+mark {
+  background-color: lightyellow;
+  font-weight: bold;
+}
+
+.important-text {
+  color: red;
+}
