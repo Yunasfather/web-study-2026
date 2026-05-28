@@ -91,6 +91,16 @@ a {
   padding: 20px;
 }
 
+.titleimg {
+  color: transparent;
+
+  background-image: url("image/51581-spring-846051.jpg");
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: center;
+  background-size: cover;
+}
+
 mark {
   background-color: lightyellow;
   font-weight: bold;
@@ -98,4 +108,55 @@ mark {
 
 .important-text {
   color: red;
+}
+
+label {
+  font-weight: bold;
+}
+
+#email:required {
+  border-color: red;
+}
+
+#message {
+  border-color: rgb(52, 233, 52);
+}
+
+#button {
+  color: white;
+
+  font-size: 17px;
+  font-weight: bold;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  background-color: rgb(102, 102, 236);
+
+  border-radius: 5px;
+}
+
+#button:hover {
+  background-color: deepskyblue;
+  cursor: pointer;
+}
+
+.column {
+  margin-top: 30px;
+  float: left;
+  width: 50%;
+  padding: 20px;
+  padding-left: 50px;
+  padding-top: 40px;
+
+  border: 2px solid lightgray;
+  border-radius: 10px 5px;
+}
+
+.content {
+  margin-left: 20px;
+}
+
+#gallery h2{
+  font-size: 40px;
 }

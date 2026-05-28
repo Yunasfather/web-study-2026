@@ -24,3 +24,9 @@ console.log(simulateTodayStudy("시간"));
 console.log(simulateTodayStudy("에러"));
 console.log(simulateTodayStudy("github"));
 console.log(simulateTodayStudy("???"));
+
+console.log(simulateTodayStudy("오늘 피곤해"));
+console.log(simulateTodayStudy("시간이 별로 없어"));
+console.log(simulateTodayStudy("에러가 계속 나와"));
+console.log(simulateTodayStudy("github 올려야 해"));
+console.log(simulateTodayStudy("뭐하지"));
