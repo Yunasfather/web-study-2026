@@ -1,0 +1,49 @@
+#a,
+#b,
+#c,
+#d,
+#e,
+#f,
+#g,
+#h {
+  width: 70px;
+  height: 30px;
+
+  margin: 10px;
+}
+
+#a {
+  border: 2px solid blue;
+}
+
+#b {
+  border: 2px dashed blue;
+}
+
+#c {
+  border: 2px dotted blue;
+}
+
+#d {
+  border: 2px double blue;
+}
+
+#e {
+  border: 2px groove blue;
+}
+
+#f {
+  border: 2px ridge blue;
+}
+
+#g {
+  border: 2px inset blue;
+}
+#h {
+  border: 20px solid blue;
+  width: 100px;
+  height: 100px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-image: url("image/바다.jpg") 30 stretch;
+}

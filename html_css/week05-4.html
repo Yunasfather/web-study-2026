@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overlay</title>
+    <style>
+      .container {
+        position: relative;
+        width: 50%;
+      }
+      .image {
+        display: block;
+        width: 50%;
+        height: auto;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        opacity: 0;
+        transition: 0.5s ease;
+        background-color: #008cba;
+      }
+      .container:hover .overlay {
+        opacity: 1;
+      }
+      #change {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+      }
+
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>이미지 오버레이</h2>
+    <p>이미지 위에 마우스를 올려 놓으면 효과를 볼 수 있습니다.</p>
+    <div class="container">
+      <img
+        src="image/Gemini_Generated_Image_22lqsi22lqsi22lq.png"
+        alt=""
+        class="image"
+      />
+      <div class="overlay"><div class="text">안녕하세요</div></div>
+    </div>
+  </body>
+</html>
