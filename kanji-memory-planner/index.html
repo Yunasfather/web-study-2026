@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Kanji Memory Planner</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="app-header">
+        <h1 class="app-title">漢字記憶プランナー</h1>
+        <p class="app-subtitle">
+          エビングハウスの忘却曲線に基づいて、漢字の復習タイミングを管理する学習アプリ
+        </p>
+      </header>
+      <main class="app-main">
+        <section class="review-card-section">
+          <h2 class="section-title">今日の復習カード</h2>
+
+          <div class="kanji-card">
+            <p class="kanji-main">記</p>
+            <div class="overlay">
+              <div class="kanji-mean">
+                <p>意味: 記録する / 覚える</p>
+                <p>音読み: キ</p>
+                <p>訓読み: しるす</p>
+              </div>
+            </div>
+          </div>
+          <p>次の復習日: <time datetime="2026-05-30">2026-05-30</time></p>
+          <p class="review-status">状態: 復習待ち</p>
+
+          <button type="button" class="review-button">復習する</button>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

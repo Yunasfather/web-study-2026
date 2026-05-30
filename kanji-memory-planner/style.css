@@ -1,0 +1,125 @@
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.app-header {
+  padding: 40px 20px;
+  text-align: center;
+
+  background-image: url("images/kanji-header.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.app-title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+
+  background: linear-gradient(to right, #1f2f3f, #0f6f8f, #2aa7b8, #d6b46a);
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.app-subtitle {
+  color: #355c7d;
+  font-size: 18px;
+
+  font-weight: bold;
+
+  background-color: rgba(255, 255, 255, 0.55);
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid rgba(214, 180, 106, 0.7);
+  border-radius: 20px;
+
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.8);
+}
+
+.review-card-section {
+  border: 2px solid rgba(214, 180, 106, 0.7);
+  border-radius: 18px;
+  padding: 24px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(53, 92, 125, 0.2);
+  text-align: center;
+}
+
+.section-title {
+  color: #355c7d;
+  margin-bottom: 16px;
+}
+
+.app-main {
+  margin: 30px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.kanji-card {
+  border: 1px solid #d6b46a;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.75);
+  position: relative;
+  max-width: 420px;
+}
+
+.kanji-main {
+  font-size: 56px;
+  font-weight: bold;
+  margin: 0 0 12px 0;
+  color: #1f2f3f;
+}
+
+.review-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #2aa7b8;
+  border-radius: 20px;
+  color: #0f6f8f;
+}
+
+.review-button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 20px;
+  background-color: #0f6f8f;
+  color: white;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+  border-radius: 16px;
+}
+
+.kanji-mean {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.kanji-card:hover .overlay {
+  opacity: 1;
+}
