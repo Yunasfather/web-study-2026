@@ -16,22 +16,62 @@
       </header>
       <main class="app-main">
         <section class="review-card-section">
-          <h2 class="section-title">今日の復習カード</h2>
+          <!-- 뜻: 오늘 복습 카드 전체 영역 -->
 
-          <div class="kanji-card">
-            <p class="kanji-main">記</p>
-            <div class="overlay">
-              <div class="kanji-mean">
-                <p>意味: 記録する / 覚える</p>
-                <p>音読み: キ</p>
-                <p>訓読み: しるす</p>
+          <div class="container">
+            <!-- 뜻: section 안의 내용을 감싸는 박스 -->
+
+            <h2 class="section-title">今日の復習カード</h2>
+            <!-- 뜻: 이 영역의 제목 -->
+
+            <div class="card-list">
+              <!-- 뜻: 여러 개의 한자 카드를 가로/반응형으로 배치할 부모 박스 -->
+
+              <div class="kanji-card">
+                <!-- 뜻: 첫 번째 한자 카드 -->
+
+                <p class="kanji-main">첫 번째 한자</p>
+                <!-- 뜻: 카드 앞면에 크게 보일 한자 -->
+
+                <div class="overlay">
+                  <!-- 뜻: hover 했을 때 카드 위에 덮일 설명 영역 -->
+
+                  <div class="kanji-mean">
+                    <!-- 뜻: 의미, 음독, 훈독을 가운데 보여주는 박스 -->
+
+                    <p>의미가 나온 곳</p>
+                    <p>음독</p>
+                    <p>훈독</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="kanji-card">
+                <!-- 뜻: 두 번째 한자 카드 -->
+
+                <p class="kanji-main">두 번째 한자</p>
+
+                <div class="overlay">
+                  <div class="kanji-mean">
+                    <p>의미가 나온 곳</p>
+                    <p>음독</p>
+                    <p>훈독</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <p>次の復習日: <time datetime="2026-05-30">2026-05-30</time></p>
-          <p class="review-status">状態: 復習待ち</p>
 
-          <button type="button" class="review-button">復習する</button>
+            <p>次の復習日: <time datetime="2026-05-30">2026-05-30</time></p>
+
+            <input
+              class="review-status"
+              type="text"
+              placeholder="정답 입력칸"
+              required
+            />
+
+            <button type="button" class="review-button">復習する</button>
+          </div>
         </section>
       </main>
     </div>
