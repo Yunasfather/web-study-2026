@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  display: grid;
+  gap: 20px;
+  background-color: #f2f2f2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+header {
+  text-align: center;
+  background-image: url(image/51581-spring-846051.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: aliceblue;
+  text-shadow:
+    4px -5px 10px blue,
+    4px 5px 10px skyblue;
+}
+
+.profile-card {
+  border: 2px solid gray;
+  border-radius: 16px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 4px 4px 15px 10px gray inset;
+}
+ul li:first-child {
+  color: pink;
+}
+
+ul li:last-child {
+  color: blue;
+}
+
+a[target="_blank"]::after {
+  content: "👉";
+}
+.disabled-link {
+  color: gray;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+input[type="email"]:required {
+  border: 2px solid skyblue;
+}
+
+input:required {
+  background-color: #fff0f0;
+}
+
+input:focus {
+  background: conic-gradient(at 0% 30%, red, blue);
+}
+
+button {
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
