@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">버튼</button>
+    <div id="text">색 변경</div>
+
+    <style>
+      button {
+        width: 150px;
+        margin: 20px 55px;
+        font-size: 1em;
+        padding: 5px 10px;
+        background-color: #ccccff;
+      }
+    </style>
+    <script>
+      document.getElementById("btn").addEventListener("click", function () {
+        document.getElementById("text").style.color = "green";
+      });
+    </script>
+  </body>
+</html>

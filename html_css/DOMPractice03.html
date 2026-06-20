@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">DOM 연습</h1>
+    <p id="desc">기본 설명입니다.</p>
+    <p id="box">box</p>
+    <img id="box2" />
+    <button id="changeBtn">변경</button>
+
+    <script>
+      //   const title = document.getElementById("title");
+
+      //   const desc = document.getElementById("desc");
+
+      //   title.textContent = "DOM 선택 완료";
+
+      //   document
+      //     .getElementById("changeBtn")
+      //     .addEventListener("click", function () {
+      //       const desc = document.getElementById("desc");
+      //       desc.style.color = "blue";
+      //     });
+
+      //   desc.classList.add("active"); // class를 유지하면서 추가하려면 classList.add가 더 좋음
+      //   desc.setAttribute("class", "active"); // 또 다른 클래스 추가방법
+
+      const text = document.getElementById("title");
+      text.textContent = "복습 완료";
+
+      const box = document.getElementById("box");
+      box.style.color = "red";
+
+      box.classList.add("active"); // <--- 기존 클래스를 유지하면서 추가 사용하기 좋음
+      //   box.setAttribute("class", "active"); //<-- 기존 클래스를 교체
+
+      box.getAttribute("box");
+
+      box2.setAttribute("src", "image.png");
+
+
+    </script>
+  </body>
+</html>
